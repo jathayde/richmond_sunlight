@@ -1,0 +1,231 @@
+/*
+Colors:
+  background: 243a51
+  status (red): 790806
+  sidebar (cream): f4eee5
+  sidebar title (dark cream); dccbaf
+  navbar: 234053
+*/
+
+/* Main */
+body {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: medium;
+  text-align: center;
+  color: #333333;
+  background: #243a51 url('../images/background.png') no-repeat top center;
+  
+  margin: 0 0.4em 0 0.4em;
+}
+
+a { text-decoration: underline; font-weight: bold; }
+a:link { color: #c6a952; }
+a:hover { color: #c6a952; }
+a:visited { color: #c6a952; }
+
+h1 {
+  font: 200% Georgia, times, serif;
+  padding-bottom: 0.667em;
+}
+
+#page-wrap {
+  font-size: 75%; /* ~12px */
+  line-height: 1.666em;
+  width: 66em;
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(0,0,0,0.1);
+}
+
+#page {
+  margin: 0 auto;
+  text-align: left;
+  width: 65.167em;
+  background: white;
+  border-left: 2px solid #333333;
+  border-right: 2px solid #333333;
+}
+
+#content {
+  clear: both;
+}
+
+#header {
+  color: black;
+}
+
+#header div, #header ul {
+  padding: 0 0.8333em;
+}
+
+#header #logo {
+  float: left;
+}
+
+#header #from-and-search {
+  float: right;
+  text-align: right;
+  margin-top: 0.667em;
+}
+
+#header #interfaith img {
+  width: 6.167em;
+}
+
+#header label img {
+  vertical-align: -20%;
+  margin-right: -0.333em;
+  width: 4.667em;
+}
+
+#header #search-box {
+  width: 17.5em;
+}
+
+#header #search input[type="image"] {
+  vertical-align: bottom;
+  width: 2.833em;
+}
+
+#header #logo img {
+  width: 22.833em;
+}
+
+#header #date-status {
+  color: white;
+  clear: both;
+  padding: 0 1.667em;
+  font-size: 83.333%;
+  background: #790806 url('../images/date-status-background.gif') repeat-x;
+  height: 2.3em;
+  line-height: 2.3em;
+}
+
+#header strong {
+  font-weight: bold;
+  padding-right: 0.667em;
+}
+
+#nav {
+  background: #234053 url('../images/navbar-background.jpg') repeat-x;
+  overflow: auto;
+  border-bottom: 1px solid #404040;
+  height: 3.167em;
+  line-height: 3.167em;
+}
+
+#nav li {
+  float: left;
+}
+
+#nav li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 117%;
+  padding: 0 0.8em;
+  font-weight: 100;
+}
+
+#nav li#legislator-select {
+  float: right;
+  position: relative;
+  top: 0.6em;
+}
+
+#nav li#legislator-select select {
+  width: 20em;
+}
+
+/* selected tab */
+#body-home #t-home,
+#body-bills #t-bills,
+#body-legislators #t-legislators,
+#body-committees #t-committees,
+#body-statistics #t-statistics,
+#body-about #t-about {
+  background: #406e91 url('../images/tab-hl-background.jpg') repeat-x;
+  margin-top: 0.2em;
+  line-height: 2.91em;
+}
+
+#content {
+  padding: 1em 1.667em;
+  width: 41.667em;
+  float: left;
+}
+
+#sidebar {
+  background: #f4eee5;
+  margin-left: 45em;
+}
+
+#sidebar .pod {
+  padding-top: 0.7em;
+}
+
+#sidebar h3 {
+  font-weight: bold;
+  font-size: 100%;
+  background: #dccbaf;
+  padding: 0.333em 0.833em;
+  margin-bottom: 0.5em;
+}
+
+#sidebar p {
+  font-size: 91.667%;
+  padding: 0 0.909em;
+}
+
+#footer {
+  clear: both;
+  font-size: 75%;
+  padding-left: 2.5em;
+  color: #333;
+}
+
+/* Repeated elements */
+#page p {
+  padding-bottom: 1.667em;
+}
+
+.stat-number {
+  font: bold 240% "Georgia", serif;
+  color: #333333;
+}
+
+/* Page specific elements */
+#sidebar .stats img {
+  width: 19.364em;
+}
+
+.stat-number {
+  position: absolute;
+/*  margin-top: -2em;*/
+  margin-top: 0.24em;
+  margin-left: -4.2em;
+}
+
+/* Clear fix elements */
+#page:after, 
+#column:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#page:after, 
+#column:after {
+  display: inline-block;
+}
+
+/* Hides from IE-mac \*/
+* html #page,
+* html #column {height: 1%;}
+#page, 
+#column {
+  display: block;
+}
+/* End hide from IE-mac */
